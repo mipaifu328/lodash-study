@@ -1,0 +1,25 @@
+{
+  "name": "lodash-study",
+  "version": "1.0.0",
+  "description": "学习lodash源码",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mipaifu328/lodash-study.git"
+  },
+  "keywords": [
+    "lodash"
+  ],
+  "author": "mipaifu8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mipaifu328/lodash-study/issues"
+  },
+  "homepage": "https://github.com/mipaifu328/lodash-study#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
