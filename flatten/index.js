@@ -1,25 +1,20 @@
 function flatten(array, deep=1) {
   
   // 自己实现方式 
+  
   let result = []
   let length = array ? array.length : 0;
 
   for (let i = 0; i < length; i ++) {
     if(array[i] instanceof Array && deep >0){
-      array[i].forEach(item => {
-        if(item instanceof Array){
-          let temp = flatten(item, deep-1)
-          result.push(temp)
-        }else{
-          result.push(item)
-        }
-      })
+      result = result.concat(flatten(array[i], deep-1))
     }else{
       result.push(array[i])
     }
   }
 
   return result
+  
   
   // lodash库实现方式
 
